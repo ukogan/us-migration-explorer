@@ -1,0 +1,11 @@
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# Mockup ZIP that downloaded as an HTML 404 page from the IRS — kept on
+# disk for reference but not worth committing.
+data/raw/2022-2023/2223migrationdata.zip
+
+# Claude design preview artifact — not part of the app.
+mockup/.thumbnail
