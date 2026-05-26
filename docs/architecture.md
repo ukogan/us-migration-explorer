@@ -9,7 +9,7 @@ runs from `file://` or any static server.
 
 | File | Responsibility |
 |---|---|
-| `SOI Migration Explorer.html` | Page shell, loads React + Babel from CDN, loads `data-real.js` then the `.jsx` files in dependency order. |
+| `index.html` | Page shell, loads React + Babel from CDN, loads `data-real.js` then the `.jsx` files in dependency order. |
 | `data-real.js` | Generated. Sets `window.SOI_DATA = { pair, crosstab }` from the IRS CSVs. ~7.7 MB. Built by `scripts/build_data.py`. |
 | `data.jsx` | Defines the public `window.SOI` API (state list, year range, lookup functions). When `window.SOI_DATA` is present, reads from it; otherwise falls back to a synthetic fixture for design-time work. |
 | `controls.jsx` | Top control bar — year slider, state selector, direction, measure, normalization toggles. |
